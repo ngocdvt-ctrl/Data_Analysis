@@ -30,3 +30,27 @@ print(f"{s8}は{s6}が好きです")  # Sử dụng f-string để tạo chuỗi
 print(f"{s8}は{s6}が好きです") 
 print(f"{s8.title()}は{s6.upper()}が好きです") 
 
+import os
+import re
+prog = re.compile("P(y|i)[tT]ho?n") 
+print(prog.search("Python"))  # Tìm kiếm chuỗi "Python" theo mẫu regex
+print(prog.search("spam_spam_spam")) 
+
+from datetime import datetime
+
+now = datetime.now()
+print(now)
+print(f"{now:%Y年%m月%d日}")  # In ra ngày hiện tại theo định dạng năm-tháng-ngày")
+start = datetime(2020,1,1)
+print(now - start)  # Tính khoảng thời gian từ ngày 1/1/2020 đến hiện tại
+
+import pickle
+pick = {"today": now, "delta": now - start}
+with open("data.pkl", "wb") as f:
+    pickle.dump(pick, f)  # Lưu dữ liệu pick vào file data.pkl ở chế độ ghi nhị phân ("wb")
+
+with open("data.pkl", "rb") as f:
+    data = pickle.load(f)
+print(data)
+
+print(pickle.dumps(pick))
