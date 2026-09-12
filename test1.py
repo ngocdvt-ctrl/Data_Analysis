@@ -31,6 +31,7 @@ print(f"{s8}は{s6}が好きです")
 print(f"{s8.title()}は{s6.upper()}が好きです") 
 
 import os
+from os import path
 import re
 prog = re.compile("P(y|i)[tT]ho?n") 
 print(prog.search("Python"))  # Tìm kiếm chuỗi "Python" theo mẫu regex
@@ -54,3 +55,20 @@ with open("data.pkl", "rb") as f:
 print(data)
 
 print(pickle.dumps(pick))
+
+from pathlib import Path
+p = Path("sample.txt")
+print(p.resolve())  # In ra đường dẫn tuyệt đối của file sample.txt
+
+p1 = Path()
+print(f"Current folder:{p1.resolve()}")  # In ra đường dẫn tuyệt đối của thư mục hiện tại
+
+p2 = Path() / "ham" / "eggs.txt"  # Tạo đường dẫn bằng toán tử /
+print(p2.resolve())  # In ra đường dẫn tuyệt đối của file eggs.txt trong thư mục ham
+p2.parent.mkdir(parents=True, exist_ok=True)
+p2.write_text("Hello World", encoding="utf-8")
+
+print(p2.is_file())  # Kiểm tra xem p2 có phải là file không
+print(p2.is_dir())   # Kiểm tra xem p2 có phải là thư mục không
+
+
