@@ -16,3 +16,5 @@ tables = pd.read_html(io.StringIO(response.text), flavor="html5lib")
 print(len(tables))
 df = tables[2]
 print(df)
+df.to_csv("data.csv", index=False, encoding="utf-8-sig")
+df.to_excel("data.xlsx", index=False)

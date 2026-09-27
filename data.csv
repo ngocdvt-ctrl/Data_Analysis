@@ -1,0 +1,256 @@
+﻿名前,国・地域,管理者,登録日,SLD,IDN
+.ac,アセンション島,Internet Computer Bureau（英語版）,1997年12月19日,Yes,No
+.ad,アンドラ,Andorra Telecom（英語版）,1996年01月09日,Yes,ラテン文字
+.ae,アラブ首長国連邦,TDRA（UAE政府機関）,1992年12月01日,Yes,No
+.af,アフガニスタン,通信・IT省（アフガニスタン政府機関）,1997年10月16日,Yes,No
+.ag,アンティグア・バーブーダ,UHSA（英語版）医学部,1991年09月03日,Yes,No
+.ai,アンギラ,アンギラ政府,1995年02月16日,Yes,No
+.al,アルバニア,AKEP（アルバニア政府機関）,1992年04月21日,Yes,No
+.am,アルメニア,Internet Society（アルメニアの非政府組織）,1994年08月26日,Yes,No
+.an,オランダ領アンティル,未割り当て,1993年09月09日,No,
+.ao,アンゴラ,MTTI（アンゴラ政府機関）,1995年11月15日,Yes,No
+.aq,南極,南極ネットワーク情報センター,1992年02月26日,南極に活動実態を有する者等に限る [cctld 1],No
+.ar,アルゼンチン,アルゼンチン大統領府,1987年09月23日,Yes,ラテン文字 [cctld 2]
+.as,アメリカ領サモア,AS Domain Registry,1997年06月12日,Yes,ラテン文字 [cctld 3]
+.at,オーストリア,nic.at GmbH,1988年01月20日,Yes,ラテン文字
+.au,オーストラリア,auDA,1986年03月05日,オーストラリアとの有効な関係を有する者等に限る [cctld 4],日本語、簡体字中国語、韓国語など [cctld 4]
+.aw,アルバ,SETAR,1996年02月20日,アルバで登録された事業者等に限る,不明
+.ax,オーランド諸島,オーランド諸島自治政府,2006年06月21日,Yes,ラテン文字 [cctld 5]
+.az,アゼルバイジャン,IntraNS,1993年08月25日,不明,不明
+.ba,ボスニア・ヘルツェゴビナ,UTIC（サラエボ大学）,1996年08月14日,成人している者に限る [cctld 6],No
+.bb,バルバドス,"Ministry of Innovation, Science and Smart Technology",1991年09月03日,バルバドスに現地基盤を有する者に限る [cctld 7],不明
+.bd,バングラデシュ,Posts and Telecommunications Division,1999年05月20日,バングラデシュ国内の個人等に限る [cctld 8],No
+.be,ベルギー,DNS Belgium vzw/asbl,1988年08月05日,Yes,ラテン文字
+.bf,ブルキナファソ,Autorité de Régulation des Communications Electroniques et des Postes (ARCEP),1993年03月29日,Yes,不明
+.bg,ブルガリア,Register.BG,1995年01月03日,ブルガリア国民・永住者またはEU加盟国の国民等に限る [cctld 9],キリル文字 [cctld 9]
+.bh,バーレーン,Telecommunications Regulatory Authority (TRA),1994年02月01日,Yes,No
+.bi,ブルンジ,Centre National de l'Informatique,1996年10月21日,Yes,不明
+.bj,ベナン,ARCEP BENIN（英語版）,1996年01月18日,Yes,不明
+.bl,サン・バルテルミー島,未割り当て,2007年10月11日,No,
+.bm,バミューダ諸島,"Registry General Department, Ministry of Home Affairs",1993年03月31日,調査中,不明
+.bn,ブルネイ,AITI,1994年06月03日,Yes,No
+.bo,ボリビア,Agencia de Gobierno Electrónico y Tecnologías de Información y Comunicación,1991年02月26日,Yes,スペイン語
+.bq,ボネール島,未割り当て,2010年12月20日,No,
+.br,ブラジル,Comite Gestor da Internet no Brasil,1989年04月18日,調査中,ブラジルポルトガル語
+.bs,バハマ,University of The Bahamas,1991年09月03日,調査中,不明
+.bt,ブータン,Ministry of Information and Communications,1997年07月16日,調査中,不明
+.bv,ブーベ島,Norid A/S,1997年08月21日,No,不明
+.bw,ボツワナ,Botswana Communications Regulatory Authority (BOCRA),1993年03月19日,Yes,不明
+.by,ベラルーシ,Belarusian Cloud Technologies LLC,1994年05月10日,調査中,不明
+.bz,ベリーズ,University of Belize,1991年09月03日,Yes,不明
+.ca,カナダ,CIRA（英語版）,1987年05月14日,カナダとの一定の関係を有する者等に限る [cctld 10],フランス語
+.cc,ココス諸島,eNIC Cocos (Keeling) Islands Pty. Ltd. d/b/a Island Internet Services,1997年10月13日,Yes,日本語を含む、多数の言語・文字 [cctld 11][cctld 12]
+.cd,コンゴ民主共和国,OCPT（フランス語版）,1997年08月20日,不明,不明
+.cf,中央アフリカ共和国,SOCATEL（英語版）,1996年04月24日,Yes,不明
+.cg,コンゴ共和国,Interpoint Switzerland,1997年01月14日,国外の登録者は審査・確認等を要する [cctld 13],不明
+.ch,スイス,SWITCH,1987年05月20日,Yes,ラテン文字 [cctld 14]
+.ci,コートジボワール,ARTCI（フランス語版）（コートジボワール政府機関）,1995年02月14日,Yes,No
+.ck,クック諸島,Telecom Cook Islands Ltd.,1995年08月08日,No,No
+.cl,チリ,NIC Chile（チリ大学）,1987年12月15日,Yes,ラテン文字
+.cm,カメルーン,ANTIC（カメルーン政府機関）,1995年04月29日,希望する名称の使用権を証明できる者に限る [cctld 15],No
+.cn,中国,CNNIC（英語版）（中国政府機関）,1990年11月28日,Yes,簡体字中国語、中国語
+.co,コロンビア,情報通信技術省（英語版）（コロンビア政府機関）,1991年12月24日,Yes,日本語を含む、多数の言語・文字
+.cr,コスタリカ,ANC,1990年09月10日,Yes,No
+.cu,キューバ,CENIAInternet,1992年06月03日,キューバの永住者に限る [cctld 16],スペイン語 [cctld 17]
+.cv,カーボベルデ,ARME（カーボベルデ政府機関）,1996年10月21日,Yes,ポルトガル語 [cctld 18]
+.cw,キュラソー島,キュラソー大学（英語版）,2010年12月20日,キュラソーに事業・職業上の正式な拠点を有する者等に限る [cctld 19],不明
+.cx,クリスマス島,cxDA,1997年04月24日,18歳を超える個人等に限る [cctld 20],不明
+.cy,キプロス,キプロス大学（英語版）,1994年07月26日,Yes,No
+.cz,チェコ,CZ.NIC（英語版）,1993年01月13日,Yes,No
+.de,ドイツ,DENIC eG,1986年11月05日,調査中,調査中
+.dj,ジブチ,Djibouti Telecom S.A,1996年05月22日,調査中,調査中
+.dk,デンマーク,Dansk Internet Forum,1987年07月14日,調査中,調査中
+.dm,ドミニカ国,DotDM Corporation,1991年09月03日,調査中,調査中
+.do,ドミニカ共和国,"Pontificia Universidad Catolica Madre y Maestra, Recinto Santo Tomas de Aquino",1991年08月25日,調査中,調査中
+.dz,アルジェリア,CERIST,調査中,調査中,調査中
+.ec,エクアドル,ECUADORDOMAIN S.A.,1991年02月01日,調査中,調査中
+.ee,エストニア,Eesti Interneti Sihtasutus (EIS),1992年06月03日,調査中,調査中
+.eg,エジプト,"Egyptian Universities Network (EUN), Supreme Council of Universities",1990年11月30日,調査中,調査中
+.eh,西サハラ,Not assigned,調査中,調査中,調査中
+.er,エリトリア,Eritrea Telecommunication Services Corporation (EriTel),1996年09月24日,調査中,調査中
+.es,スペイン,Red.es,1988年04月14日,調査中,調査中
+.et,エチオピア,Ethio telecom,調査中,調査中,調査中
+.eu,欧州連合,EURid vzw,2005年04月28日,調査中,ラテン文字、キリル文字、ギリシャ文字
+.fi,フィンランド,Finnish Transport and Communications Agency Traficom,1986年12月17日,調査中,調査中
+.fj,フィジー,The University of the South Pacific IT Services,調査中,調査中,調査中
+.fk,フォークランド諸島,Falkland Islands Government,1997年03月26日,調査中,調査中
+.fm,ミクロネシア連邦,FSM Telecommunications Corporation,1995年04月19日,調査中,調査中
+.fo,フェロー諸島,FO Council,1993年05月14日,調査中,調査中
+.fr,フランス,Association Française pour le Nommage Internet en Coopération (A.F.N.I.C.),1986年09月02日,調査中,調査中
+.ga,ガボン,Agence Nationale des Infrastructures Numériques et des Fréquences (ANINF),1994年12月12日,調査中,調査中
+.gb,イギリス,Reserved Domain - IANA,1985年07月24日,調査中,調査中
+.gd,グレナダ,The National Telecommunications Regulatory Commission (NTRC),1992年06月03日,調査中,調査中
+.ge,ジョージア,Caucasus Online LLC,1992年12月02日,調査中,調査中
+.gf,フランス領ギアナ,CANAL+ TELECOM,1996年07月25日,調査中,調査中
+.gg,ガーンジー島,Island Networks Ltd.,1996年08月07日,調査中,調査中
+.gh,ガーナ,Network Computer Systems Limited,1995年01月19日,調査中,調査中
+.gi,ジブラルタル,Sapphire Networks,1995年12月05日,調査中,調査中
+.gl,グリーンランド,TELE Greenland A/S,1994年04月08日,調査中,調査中
+.gm,ガンビア,GM-NIC,1997年03月28日,調査中,調査中
+.gn,ギニア,Centre National des Sciences Halieutiques de Boussoura,1994年08月09日,調査中,調査中
+.gp,グアドループ,Networking Technologies Group,1996年10月21日,調査中,調査中
+.gq,赤道ギニア,GETESA,1997年07月10日,調査中,調査中
+.gr,ギリシャ,ICS-FORTH GR,1989年02月19日,調査中,調査中
+.gs,サウスジョージア・サウスサンドウィッチ諸島,Government of South Georgia and South Sandwich Islands (GSGSSI),1997年07月31日,調査中,調査中
+.gt,グアテマラ,Universidad del Valle de Guatemala,1992年08月14日,調査中,調査中
+.gu,グアム,University of Guam,1994年04月15日,調査中,調査中
+.gw,ギニアビサウ,ARN-TIC,1997年02月04日,調査中,ラテン文字
+.gy,ガイアナ,University of Guyana,1994年09月13日,調査中,調査中
+.hk,香港,Hong Kong Internet Registration Corporation Ltd.,1990年01月03日,調査中,簡体字中国語、繁体字中国語
+.hm,ハード島とマクドナルド諸島,HM Domain Registry,1997年07月24日,調査中,調査中
+.hn,ホンジュラス,Red de Desarrollo Sostenible Honduras,1993年04月16日,調査中,調査中
+.hr,クロアチア,CARNet - Croatian Academic and Research Network,1993年02月27日,調査中,調査中
+.ht,ハイチ,Consortium FDS/RDDH,1997年03月06日,調査中,調査中
+.hu,ハンガリー,Council of Hungarian Internet Providers (CHIP),1990年11月07日,調査中,調査中
+.id,インドネシア,Perkumpulan Pengelola Nama Domain Internet Indonesia (PANDI),1993年02月27日,調査中,調査中
+.ie,アイルランド,IE Domain Registry CLG,1988年01月27日,調査中,調査中
+.il,イスラエル,The Israel Internet Association (RA),1985年10月24日,調査中,ヘブライ語
+.im,マン島,Isle of Man Government,1996年09月11日,調査中,調査中
+.in,インド,National Internet Exchange of India,1989年05月08日,調査中,調査中
+.io,イギリス領インド洋地域,Internet Computer Bureau Limited,1997年09月16日,調査中,調査中
+.iq,イラク,Communications and Media Commission (CMC),1997年05月09日,調査中,調査中
+.ir,イラン,Institute for Research in Fundamental Sciences,1994年04月06日,調査中,ペルシア語
+.is,アイスランド,ISNIC - Internet á Íslandi hf.,1987年11月18日,調査中,調査中
+.it,イタリア,IIT - CNR,1987年12月23日,調査中,調査中
+.je,ジャージー島,Island Networks (Jersey) Ltd.,1996年08月08日,調査中,調査中
+.jm,ジャマイカ,University of West Indies,1991年09月24日,調査中,調査中
+.jo,ヨルダン,Ministry of Digital Economy and Entrepreneurship (MoDEE),1994年11月23日,調査中,調査中
+.jp,日本,"Japan Registry Services Co., Ltd.",1986年08月05日,調査中,日本語
+.ke,ケニア,Kenya Network Information Center (KeNIC),1993年04月29日,調査中,調査中
+.kg,キルギス,AsiaInfo Telecommunication Enterprise,1995年07月12日,調査中,調査中
+.kh,カンボジア,Telecommunication Regulator of Cambodia (TRC),1996年02月20日,調査中,調査中
+.ki,キリバス,"Ministry of Information, Communications and Transport (MICT)",1995年04月19日,調査中,調査中
+.km,コモロ,Comores Telecom,1998年06月08日,調査中,調査中
+.kn,セントクリストファー・ネイビス,"Ministry of Finance, Sustainable Development Information & Technology",1991年09月03日,調査中,調査中
+.kp,北朝鮮,Star Joint Venture Company,2007年09月24日,調査中,調査中
+.kr,韓国,Korea Internet & Security Agency (KISA),1986年09月29日,調査中,韓国語
+.kw,クウェート,Communications and Information Technology Regulatory Authority,1992年10月26日,調査中,調査中
+.ky,ケイマン諸島,Utility Regulation and Competition Office (OfReg),1995年05月03日,調査中,調査中
+.kz,カザフスタン,Association of IT Companies of Kazakhstan,1994年09月19日,調査中,調査中
+.la,ラオス,LANIC,1996年05月14日,調査中,日本語、ラーオ語、タイ語など
+.lb,レバノン,Internet Society Lebanon,1993年08月25日,調査中,調査中
+.lc,セントルシア,University of Puerto Rico,1991年09月03日,調査中,調査中
+.li,リヒテンシュタイン,SWITCH The Swiss Education & Research Network,1993年02月26日,調査中,調査中
+.lk,スリランカ,Council for Information Technology LK Domain Registrar,1990年06月15日,調査中,調査中
+.lr,リベリア,"Data Technology Solutions, Inc.",1997年04月09日,調査中,調査中
+.ls,レソト,Lesotho Network Information Centre Proprietary (LSNIC),1993年01月13日,調査中,調査中
+.lt,リトアニア,Kaunas University of Technology,1992年06月03日,調査中,調査中
+.lu,ルクセンブルク,RESTENA,1995年01月27日,調査中,調査中
+.lv,ラトビア,ラトビア大学,1993年04月29日,調査中,調査中
+.ly,リビア,General Authority of Communications and Informatics (GACI),1997年04月23日,調査中,調査中
+.ma,モロッコ,Agence Nationale de Réglementation des Télécommunications (ANRT),1993年11月26日,調査中,調査中
+.mc,モナコ,Direction des Plateformes et des Ressources Numériques,1995年01月20日,調査中,調査中
+.md,モルドバ,IP Serviciul Tehnologia Informatiei si Securitate Cibernetica,1994年03月24日,調査中,調査中
+.me,モンテネグロ,Government of Montenegro,2007年09月24日,調査中,調査中
+.mf,調査中,Not assigned,2007年10月11日,調査中,調査中
+.mg,マダガスカル,NIC-MG (Network Information Center Madagascar),1995年07月25日,調査中,調査中
+.mh,マーシャル諸島,Office of the Cabinet,1996年08月16日,調査中,調査中
+.mk,北マケドニア,Macedonian Academic Research Network Skopje,1993年09月23日,調査中,調査中
+.ml,マリ,Agence des Technologies de l’Information et de la Communication,1993年09月29日,調査中,調査中
+.mm,ミャンマー,Ministry of Transport and Communications,1997年02月04日,調査中,調査中
+.mn,モンゴル,"Datacom Co., Ltd.",1995年03月02日,調査中,調査中
+.mo,マカオ,Macao Post and Telecommunications Bureau (CTT),1992年09月17日,調査中,調査中
+.mp,北マリアナ諸島,"Saipan Datacom, Inc.",1996年10月22日,調査中,調査中
+.mq,マルティニーク,CANAL+ TELECOM,1997年03月28日,調査中,調査中
+.mr,モーリタニア,Université de Nouakchott Al Aasriya,1996年04月24日,調査中,調査中
+.ms,モントセラト,MNI Networks Ltd.,1997年03月06日,調査中,調査中
+.mt,マルタ,NIC (Malta),1992年12月02日,調査中,調査中
+.mu,モーリシャス,Internet Direct Ltd,1995年10月06日,調査中,調査中
+.mv,モルディブ,Dhivehi Raajjeyge Gulhun PLC,1996年09月25日,調査中,マレー語
+.mw,マラウイ,Malawi Sustainable Development Network Programme (Malawi SDNP),1997年01月03日,調査中,調査中
+.mx,メキシコ,NIC-Mexico ITESM - Campus Monterrey,1989年02月01日,調査中,調査中
+.my,マレーシア,MYNIC Berhad,1987年06月08日,調査中,調査中
+.mz,モザンビーク,Centro de Informatica de Universidade Eduardo Mondlane,1992年09月04日,調査中,調査中
+.na,ナミビア,Namibian Network Information Center,1991年05月08日,調査中,調査中
+.nc,ニューカレドニア,Office des Postes et Telecommunications,1993年10月13日,調査中,調査中
+.ne,ニジェール,SONITEL,1996年04月24日,調査中,調査中
+.nf,ノーフォーク島,Norfolk Island Data Services,1996年03月18日,調査中,調査中
+.ng,ナイジェリア,Nigeria Internet Registration Association,1995年03月15日,調査中,調査中
+.ni,ニカラグア,Universidad Nacional del Ingernieria. Division de Tecnologias de la Informacion.,1989年10月13日,調査中,調査中
+.nl,オランダ,SIDN (Stichting Internet Domeinregistratie Nederland),1986年04月25日,調査中,調査中
+.no,ノルウェー,Norid A/S,1987年03月17日,調査中,調査中
+.np,ネパール,Mercantile Communications Pvt. Ltd.,1995年01月25日,調査中,調査中
+.nr,ナウル,CENPAC NET,1998年03月30日,調査中,調査中
+.nu,ニウエ,The IUSN Foundation,1997年06月20日,調査中,ラテン文字
+.nz,ニュージーランド,InternetNZ,1987年01月19日,調査中,ラテン文字
+.om,オマーン,Telecommunications Regulatory Authority (TRA),1996年04月11日,調査中,調査中
+.pa,パナマ,Universidad Tecnologica de Panama,1994年05月25日,調査中,調査中
+.pe,ペルー,Red Cientifica Peruana,1991年11月25日,調査中,調査中
+.pf,フランス領ポリネシア,Gouvernement de la Polynésie française,1996年03月19日,調査中,調査中
+.pg,パプアニューギニア,パプアニューギニア工科大学（英語版）,1991年09月26日,調査中,調査中
+.ph,フィリピン,PH Domain Foundation,1990年09月14日,調査中,調査中
+.pk,パキスタン,PKNIC,1992年06月03日,調査中,調査中
+.pl,ポーランド,Research and Academic Computer Network,1990年07月30日,調査中,多数の言語・文字に対応
+.pm,サンピエール島・ミクロン島,Association Française pour le Nommage Internet en Coopération (A.F.N.I.C.),1997年08月20日,調査中,調査中
+.pn,ピトケアン諸島,Pitcairn Island Administration,1997年07月10日,調査中,調査中
+.pr,プエルトリコ,Gauss Research Laboratory Inc.,1989年08月27日,調査中,調査中
+.ps,パレスチナ,電気通信・情報技術省 政府コンピューターセンター,2000年03月22日,調査中,調査中
+.pt,ポルトガル,Associação DNS.PT,1988年06月30日,調査中,調査中
+.pw,パラオ,Micronesia Investment and Development Corporation,1997年06月12日,調査中,日本語を含む、多数の言語・文字に対応
+.py,パラグアイ,NIC-PY,1991年09月09日,調査中,グアラニー語
+.qa,カタール,Communications Regulatory Authority,1996年06月12日,調査中,調査中
+.re,レユニオン,Association Française pour le Nommage Internet en Coopération (A.F.N.I.C.),1997年04月07日,調査中,調査中
+.ro,ルーマニア,National Institute for R&D in Informatics,1993年02月26日,調査中,調査中
+.rs,セルビア,Serbian National Internet Domain Registry (RNIDS),2007年09月24日,調査中,多数の言語・文字
+.ru,ロシア,Coordination Center for TLD RU,1994年04月07日,調査中,調査中
+.rw,ルワンダ,Rwanda Internet Community and Technology Alliance (RICTA) Ltd,1996年10月21日,調査中,調査中
+.sa,サウジアラビア,"Communications, Space and Technology Commission",1994年05月17日,調査中,調査中
+.sb,ソロモン諸島,Solomon Telekom Company Limited,1994年04月19日,調査中,調査中
+.sc,セーシェル,VCS Pty Ltd,1997年05月09日,調査中,中国語
+.sd,スーダン,Sudan Internet Society,1997年03月06日,調査中,調査中
+.se,スウェーデン,The Internet Infrastructure Foundation,1986年09月04日,調査中,イディッシュ語、ラテン文字
+.sg,シンガポール,Singapore Network Information Centre (SGNIC) Pte Ltd,1988年10月19日,調査中,調査中
+.sh,セントヘレナ,Government of St. Helena,1997年09月23日,調査中,調査中
+.si,スロベニア,Academic and Research Network of Slovenia (ARNES),1992年04月01日,調査中,ラテン文字
+.sj,スヴァールバル諸島,Norid A/S,1997年08月21日,調査中,調査中
+.sk,スロバキア,"SK-NIC, a.s.",1993年03月29日,調査中,調査中
+.sl,シエラレオネ,Sierratel,1997年05月09日,調査中,調査中
+.sm,サンマリノ,Telecom Italia San Marino S.p.A.,1995年08月16日,調査中,調査中
+.sn,セネガル,Universite Cheikh Anta Diop,1993年03月19日,調査中,調査中
+.so,ソマリア,Ministry of Post and Telecommunications,1997年08月28日,調査中,調査中
+.sr,スリナム,Telesur,1991年09月03日,調査中,調査中
+.ss,南スーダン,National Communication Authority (NCA),2011年08月31日,調査中,調査中
+.st,サントメ・プリンシペ,Tecnisys,1997年11月07日,調査中,調査中
+.su,ソビエト連邦,Russian Institute for Development of Public Networks (ROSNIIROS),1990年09月19日,調査中,調査中
+.sv,エルサルバドル,SVNet,1994年11月04日,調査中,調査中
+.sx,シント・マールテン,SX Registry SA B.V.,2010年12月20日,調査中,調査中
+.sy,シリア,National Authority for Information Technology Services (NAITS),1996年02月20日,調査中,調査中
+.sz,エスワティニ,University of Swaziland Department of Computer Science,1993年07月19日,調査中,調査中
+.tc,タークス・カイコス諸島,Melrex TC,1997年01月27日,調査中,調査中
+.td,チャド,ADETIC（フランス語版）,1997年11月03日,調査中,調査中
+.tf,フランス領南方・南極地域,Association Française pour le Nommage Internet en Coopération (A.F.N.I.C.),1997年08月26日,調査中,調査中
+.tg,トーゴ,ARCEP,1996年09月05日,調査中,調査中
+.th,タイ,Thai Network Information Center Foundation,1988年09月07日,調査中,タイ語
+.tj,タジキスタン,Information Technology Center,1997年12月11日,調査中,調査中
+.tk,トケラウ,Telecommunication Tokelau Corporation (Teletok),1997年11月07日,調査中,調査中
+.tl,東ティモール,Autoridade Nacional de Comunicações,2005年03月23日,調査中,調査中
+.tm,トルクメニスタン,TM Domain Registry Ltd,1997年05月30日,調査中,調査中
+.tn,チュニジア,Agence Tunisienne d'Internet,1991年05月17日,調査中,調査中
+.to,トンガ,トンガ王国政府・トゥポウトア皇太子（英語版）,1995年12月18日,調査中,調査中
+.tp,東ティモール,Not assigned,1997年05月09日,調査中,調査中
+.tr,トルコ,Bilgi Teknolojileri ve İletişim Kurumu (BTK),1990年09月17日,調査中,調査中
+.tt,トリニダード・トバゴ,"University of the West Indies, Faculty of Engineering",1991年09月03日,調査中,調査中
+.tv,ツバル,"Ministry of Transport, Energy, Communications and Innovations",1996年03月18日,調査中,調査中
+.tw,台湾,Taiwan Network Information Center (TWNIC),1989年07月31日,調査中,日本語、繁体字中国語、中国語など
+.tz,タンザニア,Tanzania Communications Regulatory Authority,1995年07月14日,調査中,調査中
+.ua,ウクライナ,Hostmaster Ltd.,1992年12月01日,調査中,キリル文字
+.ug,ウガンダ,Uganda Online Ltd.,1995年03月08日,調査中,調査中
+.uk,イギリス,Nominet UK,1985年07月24日,調査中,調査中
+.um,調査中,Not assigned,2008年04月21日,調査中,調査中
+.us,アメリカ,"Registry Services, LLC",1985年02月15日,調査中,調査中
+.uy,ウルグアイ,SeCIU - Universidad de la Republica,1990年09月10日,調査中,調査中
+.uz,ウズベキスタン,UZINFOCOM（英語版）,1995年04月29日,調査中,調査中
+.va,バチカン市国,Holy See - Vatican City State,1995年09月11日,調査中,調査中
+.vc,セントビンセント・グレナディーン,"Ministry of Telecommunications, Science, Technology and Industry",1991年09月03日,調査中,調査中
+.ve,ベネズエラ,Comisión Nacional de Telecomunicaciones (CONATEL),1991年03月07日,調査中,スペイン語
+.vg,イギリス領ヴァージン諸島,Telecommunications Regulatory Commission of the Virgin Islands,1997年02月20日,調査中,調査中
+.vi,アメリカ領ヴァージン諸島,"Virgin Islands Public Telecommunications System, Inc.",1995年08月31日,調査中,調査中
+.vn,ベトナム,Viet Nam Internet Network Information Center (VNNIC),1994年04月14日,調査中,調査中
+.vu,バヌアツ,Telecommunications Radiocommunications and Broadcasting Regulator (TRBR),1995年04月10日,調査中,調査中
+.wf,ウォリス・フツナ,Association Française pour le Nommage Internet en Coopération (A.F.N.I.C.),1997年11月14日,調査中,調査中
+.ws,サモア,Government of Samoa Ministry of Foreign Affairs & Trade,1995年07月14日,調査中,調査中
+.ye,イエメン,TeleYemen,1996年08月19日,調査中,調査中
+.yt,マヨット島,Association Française pour le Nommage Internet en Coopération (A.F.N.I.C.),1997年11月17日,調査中,調査中
+.za,南アフリカ,ZA Domain Name Authority,1990年11月07日,調査中,調査中
+.zm,ザンビア,Zambia Information and Communications Technology Authority (ZICTA),1994年03月25日,調査中,調査中
+.zw,ジンバブエ,Postal and Telecommunications Regulatory Authority of Zimbabwe (POTRAZ),1991年11月06日,調査中,調査中
