@@ -72,3 +72,4 @@ print(p2.is_file())  # Kiểm tra xem p2 có phải là file không
 print(p2.is_dir())   # Kiểm tra xem p2 có phải là thư mục không
 
 
+
