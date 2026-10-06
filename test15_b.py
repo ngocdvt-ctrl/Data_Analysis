@@ -9,16 +9,10 @@ y0 = np.zeros(100)
 x1 = rng.uniform(-1, 0, size=(100, 2))
 y1 = np.ones(100)
 
-fig, ax = plt.subplots()
-ax.scatter(x0[:, 0], x0[:, 1], marker='o', c='red', label='Class 0')
-ax.scatter(x1[:, 0], x1[:, 1], marker='x', c='blue', label='Class 1')
-ax.legend()
-
-
 def plot_boundary_margin_sv(
         x0,
-        x1,
         y0,
+        x1,
         y1,
         C,
         kernel,
@@ -31,6 +25,13 @@ def plot_boundary_margin_sv(
 # Train SVM
     svc = SVC(C=C, kernel=kernel)
     svc.fit(np.vstack((x0, x1)), np.hstack((y0, y1)))
+
+# Khởi tạo đồ thị
+    fig, ax = plt.subplots()
+
+# Vẽ dữ liệu
+    ax.scatter(x0[:, 0], x0[:, 1], color="blue", label="Class 0")
+    ax.scatter(x1[:, 0], x1[:, 1], color="red", label="Class 1")
 
     xx, yy = np.meshgrid(np.linspace(xmin, xmax, 100), np.linspace(ymin, ymax, 100))
     xy = np.vstack([xx.ravel(), yy.ravel()]).T
@@ -54,4 +55,4 @@ def plot_boundary_margin_sv(
 
     plt.show()
 
-plot_boundary_margin_sv(x0, x1, y0, y1, kernel="linear", C=1e6)
+plot_boundary_margin_sv(x0, y0, x1, y1, kernel="linear", C=1e6)
