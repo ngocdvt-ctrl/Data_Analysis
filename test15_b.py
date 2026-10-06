@@ -41,7 +41,7 @@ def plot_boundary_margin_sv(
     # Vẽ đường biên (0) và đường lề (-1, 1)
     ax.contour(
         xx, yy, p,
-        colors="k", levels=[-1, 0, 1], alpha=0.5, linestyles=["--", "-", "--"]
+        colors="k", levels=[-1, 0, 1], alpha=0.5, linestyles=["-.", "-", "--"]
     )
 
     # Đánh dấu các Support Vector bằng vòng tròn đen
