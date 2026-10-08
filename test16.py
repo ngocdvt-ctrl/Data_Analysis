@@ -11,11 +11,11 @@ fig, ax = plt.subplots()
 ax.scatter(x[y==0, 0], x[y==0, 1], color="blue", label="Class 0")
 ax.scatter(x[y==1, 0], x[y==1, 1], color="red", label="Class 1")
 
-def plot_boundary_margin_sv(x0,y,C,kernel,xmin=0,xmax=1, ymin=0, ymax=1):
+def plot_boundary_margin_sv(x,y,C,kernel,xmin=0,xmax=1, ymin=0, ymax=1):
 
 # Train SVM
     svc = SVC(C=C, kernel=kernel)
-    svc.fit(x0, y)
+    svc.fit(x, y)
 
 # Tìm đường biên
     xx, yy = np.meshgrid(np.linspace(xmin, xmax, 100), np.linspace(ymin, ymax, 100))
