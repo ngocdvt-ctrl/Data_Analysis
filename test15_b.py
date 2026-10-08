@@ -45,4 +45,4 @@ def plot_boundary_margin_sv(x0,y0,x1,y1,C,kernel,xmin=-1,xmax=1, ymin=-1, ymax=1
 
     plt.show()
 
-plot_boundary_margin_sv(x0, y0, x1, y1, C=1e6, kernel="linear")
+plot_boundary_margin_sv(x0, y0, x1, y1, C=0.1, kernel="linear")
