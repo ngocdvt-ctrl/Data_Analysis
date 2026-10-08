@@ -4,12 +4,12 @@ from sklearn.svm import SVC
 
 rng = np.random.default_rng(123)
 
-x0 = rng.uniform(0, 1, size=(100, 2))
-y = (x0[:,1] >= 2*(x0[:,0]-0.5)**2 + 0.5).astype(int)
+x = rng.uniform(0, 1, size=(100, 2))
+y = (x[:,1] >= 2*(x[:,0]-0.5)**2 + 0.5).astype(int)
 # Vẽ dữ liệu
 fig, ax = plt.subplots()
-ax.scatter(x0[y==0, 0], x0[y==0, 1], color="blue", label="Class 0")
-ax.scatter(x0[y==1, 0], x0[y==1, 1], color="red", label="Class 1")
+ax.scatter(x[y==0, 0], x[y==0, 1], color="blue", label="Class 0")
+ax.scatter(x[y==1, 0], x[y==1, 1], color="red", label="Class 1")
 
 def plot_boundary_margin_sv(x0,y,C,kernel,xmin=0,xmax=1, ymin=0, ymax=1):
 
@@ -40,4 +40,4 @@ def plot_boundary_margin_sv(x0,y,C,kernel,xmin=0,xmax=1, ymin=0, ymax=1):
 
     plt.show()
 
-plot_boundary_margin_sv(x0, y, C=1e3, kernel="rbf")
+plot_boundary_margin_sv(x, y, C=1e3, kernel="rbf")
