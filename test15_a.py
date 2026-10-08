@@ -9,18 +9,18 @@ y0 = np.zeros(100)
 x1 = rng.uniform(-1, 0, size=(100, 2))
 y1 = np.ones(100)
 
+# Khởi tạo đồ thị
+fig, ax = plt.subplots()
+
+# Vẽ dữ liệu
+ax.scatter(x0[:, 0], x0[:, 1], color="blue", label="Class 0")
+ax.scatter(x1[:, 0], x1[:, 1], color="red", label="Class 1")
+
 def plot_boundary_margin_sv(x0,y0,x1,y1,C,kernel,xmin=-1,xmax=1, ymin=-1, ymax=1):
 
 # Train SVM
     svc = SVC(C=C, kernel=kernel)
     svc.fit(np.vstack((x0, x1)), np.hstack((y0, y1)))
-
-# Khởi tạo đồ thị
-    fig, ax = plt.subplots()
-
-# Vẽ dữ liệu
-    ax.scatter(x0[:, 0], x0[:, 1], color="blue", label="Class 0")
-    ax.scatter(x1[:, 0], x1[:, 1], color="red", label="Class 1")
 
 # Tìm đường biên
     xx, yy = np.meshgrid(np.linspace(xmin, xmax, 100), np.linspace(ymin, ymax, 100))
