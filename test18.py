@@ -1,14 +1,21 @@
 import matplotlib.pyplot as plt
 from sklearn.datasets import load_iris
+from sklearn.model_selection import train_test_split
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 
-# 1. Đọc dữ liệu
+# Đọc tập dữ liệu Iris
 iris = load_iris()
 X, y = iris.data, iris.target
 
-# 2. Huấn luyện mô hình
+# Phân chia tập dữ liệu thành tập huấn luyện và kiểm tra
+X_train, X_test, y_train, y_test = train_test_split(
+    X, y, test_size=0.3, random_state=123
+)
+
+# Khởi tạo cây quyết định (độ sâu tối đa = 3)
 tree = DecisionTreeClassifier(max_depth=3, random_state=123)
-tree.fit(X, y)
+# Huấn luyện mô hình
+tree.fit(X_train, y_train)
 
 # 3. Vẽ và lưu ảnh bằng matplotlib
 plt.figure(figsize=(12, 8))
