@@ -10,5 +10,5 @@ X, y = iris.data[:100, :], iris.target[:100]
 clf = SVC()
 
 # Perform cross-validation
-scores = cross_val_score(clf, X, y, cv=10)
+scores = cross_val_score(clf, X, y, cv=10, scoring='precision')
 print("Cross-validation scores:", scores)
