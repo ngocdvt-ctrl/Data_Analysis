@@ -18,3 +18,8 @@ grid_search.fit(X_train, y_train)
 
 # 最適なパラメータの表示
 print("Best parameters: ", grid_search.best_params_)
+print("Best estimator: ", grid_search.best_estimator_)
+
+# テストデータの予測
+y_pred = grid_search.predict(X_test)
+print("Test set predictions: ", y_pred)
