@@ -4,7 +4,7 @@ import time
 
 options = Options()
 # Đã xóa dòng headless để bật cửa sổ trình duyệt lên
-options.add_argument("--disable-gpu")
+
 options.add_argument("--no-sandbox")
 
 driver = webdriver.Chrome(options=options)
