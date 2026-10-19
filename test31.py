@@ -12,7 +12,7 @@ options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(options=options)
 
 try:
-    url = "https://www.seshop.com/product/detail/27816"
+    url = "https://www.seshop.com/product/616"
     print(f"Đang truy cập vào: {url}")
     driver.get(url)
     print("Đang chờ trang web tải và vượt qua kiểm tra bảo mật...")
@@ -52,12 +52,18 @@ try:
             book_url = a_tag["href"]  # Đặt tên biến là book_url để không đè lên url trang web
 
             # 4. Lấy giá bán (Kiểm tra an toàn thẻ sale-price)
-            price_tag = div.find("span", class_="sale-price")
+            price_tag = None
+            for p_tag in div.find_all("p"):
+                if "円" in p_tag.text:
+                    price_tag = p_tag
+                    break
+
             if not price_tag:
+                print(f"Cuốn {i}: Không tìm thấy thẻ giá tiền")
                 continue
                 
-            price_s = price_tag.parent.text
-            price_s = price_s.split("円")[0].replace(",", "")
+            # Xử lý chuỗi giá (Ví dụ: "4,400円（税込）" -> 4400)
+            price_s = price_tag.text.split("円")[0].replace(",", "").strip()
             price = int(price_s)
 
             # 5. Đóng gói thành từ điển (dictionary) và thêm vào danh sách books
@@ -69,9 +75,9 @@ try:
                 "published": published,
             }
             books.append(book)
-            
+
         except Exception as e:
-            # Nếu có bất kỳ lỗi phát sinh ở cuốn sách nào, bỏ qua cuốn đó và chạy tiếp cuốn sau
+            print(f"Cuốn {i} gặp lỗi khi xử lý: {e}")
             continue
 
     print("\n--- KẾT QUẢ THU THẬP ---")

@@ -10,7 +10,7 @@ options.add_argument("--no-sandbox")
 driver = webdriver.Chrome(options=options)
 
 try:
-    url = "https://www.seshop.com/"
+    url = "https://www.seshop.com/product/616"
     print(f"Đang truy cập vào: {url}")
     driver.get(url)
     
@@ -21,6 +21,7 @@ try:
     
     print("Tiêu đề trang web hiện tại:", driver.title)
     print("Độ dài mã nguồn HTML:", len(driver.page_source), "ký tự")
+    print(driver.page_source)
 
 finally:
     driver.quit()
