@@ -5,7 +5,7 @@ from bs4 import BeautifulSoup
 from datetime import datetime
 
 options = Options()
-# Đã xóa dòng headless để bật cửa sổ trình duyệt lên
+# headless設定を削除し、ブラウザーウィンドウを表示する
 
 options.add_argument("--no-sandbox")
 
@@ -13,45 +13,54 @@ driver = webdriver.Chrome(options=options)
 
 try:
     url = "https://www.seshop.com/product/616"
-    print(f"Đang truy cập vào: {url}")
+    print(f"アクセス先: {url}")
     driver.get(url)
-    print("Đang chờ trang web tải và vượt qua kiểm tra bảo mật...")
+    print("ページの読み込みとセキュリティチェックの完了を待っています...")
     time.sleep(10) 
 
     content = driver.page_source
 
     soup = BeautifulSoup(content, "html.parser")
 
-    # Danh sách lưu thông tin của từng cuốn sách
+    # 各書籍の情報を保存するリスト
     books = []
 
-    # Sử dụng CSS Selector để lấy tất cả các thẻ <div class="inner"> bên trong list
+    # list内にあるすべての<div class="inner">要素をCSSセレクターで取得
     divs = soup.select("div.list div.inner")
 
-    # Số lượng divs tìm được
-    print(f"Số lượng khung sách tìm thấy: {len(divs)}")
+    # 見つかったdivの数
+    print(f"見つかった書籍カードの数: {len(divs)}")
 
-    for div in divs:
+    for i, div in enumerate(divs, start=1):
         try:
-            # 1. Lấy URL hình ảnh (có kiểm tra an toàn)
+            # 書籍のURLを取得
+            book_url = ""
+            text = div.find("div", class_="txt")
+            if text:
+                a_book = text.find("a")
+                if a_book and "href" in a_book.attrs:
+                    book_url = a_book["href"]
+
+            # 1. 画像URLを取得（存在を確認）
             img_tag = div.find("img")
             img_url = img_tag["src"] if img_tag and "src" in img_tag.attrs else ""
 
-            # 2. Lấy chuỗi ngày tháng phát hành
+            # 2. 発売日を取得
             date_tag = div.find("span", class_="date")
             if not date_tag:
                 continue
             day = date_tag.text.strip().removesuffix("発売")
             published = datetime.strptime(day, "%Y.%m.%d")
 
-            # 3. Lấy tiêu đề sách và URL chi tiết
-            a_tag = div.find("a")
-            if not a_tag:
-                continue
-            title = a_tag.text.strip()
-            book_url = a_tag["href"]  # Đặt tên biến là book_url để không đè lên url trang web
+            # 書籍のタイトルを取得
+            txt_div = div.find("div", class_="txt")
+            if txt_div:
+                a_title = txt_div.find("a")
+                title = a_title.text.strip() if a_title else ""
+            else:
+                title = ""
 
-            # 4. Lấy giá bán (Kiểm tra an toàn thẻ sale-price)
+            # 4. 販売価格を取得
             price_tag = None
             for p_tag in div.find_all("p"):
                 if "円" in p_tag.text:
@@ -59,14 +68,14 @@ try:
                     break
 
             if not price_tag:
-                print(f"Cuốn {i}: Không tìm thấy thẻ giá tiền")
+                print(f"{i}冊目: 価格の要素が見つかりません")
                 continue
                 
-            # Xử lý chuỗi giá (Ví dụ: "4,400円（税込）" -> 4400)
+            # 価格文字列を処理（例: "4,400円（税込）" -> 4400）
             price_s = price_tag.text.split("円")[0].replace(",", "").strip()
             price = int(price_s)
 
-            # 5. Đóng gói thành từ điển (dictionary) và thêm vào danh sách books
+            # 5. 辞書にまとめてbooksリストに追加
             book = {
                 "title": title,
                 "img_url": img_url,
@@ -77,13 +86,19 @@ try:
             books.append(book)
 
         except Exception as e:
-            print(f"Cuốn {i} gặp lỗi khi xử lý: {e}")
+            print(f"{i}冊目の処理中にエラーが発生しました: {e}")
             continue
 
-    print("\n--- KẾT QUẢ THU THẬP ---")
-    print(f"Tổng số sách lấy thành công: {len(books)}")
-    print("In ra 3 cuốn sách đầu tiên:")
-    print(books[:3])
+    print("\n--- 取得結果 ---")
+    print(f"取得に成功した書籍数: {len(books)}")
+    print("最初の3冊を表示します:")
+    for i, book in enumerate(books[:3], start=1):
+        print(f"{i}冊目:")
+        print(f"  - タイトル  : {book['title']}")
+        print(f"  - 販売価格  : {book['price']:,} 円")
+        print(f"  - 発売日    : {book['published'].strftime('%Y-%m-%d')}")
+        print(f"  - URL       : {book['url']}")
+        print(f"  - 画像URL   : {book['img_url']}")
 
 finally:
     driver.quit()
