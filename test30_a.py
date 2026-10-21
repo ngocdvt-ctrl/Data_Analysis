@@ -1,6 +1,6 @@
 import requests
 
-# Dùng trang web giả lập chuyên để học scraping, không bao giờ bị chặn 403
+# スクレイピング学習用の模擬サイトを使用（403エラーでブロックされません）
 url = "http://books.toscrape.com/"
 
 headers = {
@@ -9,4 +9,4 @@ headers = {
 
 r = requests.get(url, headers=headers)
 print(type(r)) 
-print(r.status_code)  # Sẽ trả về 200 thành công
+print(r.status_code)  # 成功時は200が返されます

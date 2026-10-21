@@ -3,6 +3,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 from bs4 import BeautifulSoup
 from datetime import datetime
+import pandas as pd
 
 options = Options()
 # headless設定を削除し、ブラウザーウィンドウを表示する
@@ -99,6 +100,11 @@ try:
         print(f"  - 発売日    : {book['published'].strftime('%Y-%m-%d')}")
         print(f"  - URL       : {book['url']}")
         print(f"  - 画像URL   : {book['img_url']}")
+
+    df = pd.DataFrame(books)
+    output_file = "seshop_books.xlsx"
+    df.to_excel(output_file)
+    print("本のリストをエクセルに保存しました！")
 
 finally:
     driver.quit()

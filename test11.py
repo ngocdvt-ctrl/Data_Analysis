@@ -1,6 +1,6 @@
 import matplotlib.pyplot as plt
 
-label = ['orange', 'apple', 'kiwi']
+label = ['オレンジ', 'りんご', 'キウイ']
 size = [10, 3, 1]
 
 fig, ax = plt.subplots()

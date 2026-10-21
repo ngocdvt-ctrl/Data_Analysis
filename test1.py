@@ -1,32 +1,32 @@
-with open("sample.txt", "w", encoding="utf-8") as f:  # Mở file sample.txt ở chế độ ghi ("w")
-    f.write("こんにちは\n")                           # Ghi chuỗi "Konnichiwa"
-    f.write("Python\n")                               # Ghi chuỗi "Python"
+with open("sample.txt", "w", encoding="utf-8") as f:  # sample.txtを書き込みモード（"w"）で開く
+    f.write("こんにちは\n")                           # 文字列「こんにちは」を書き込む
+    f.write("Python\n")                               # 文字列「Python」を書き込む
 print(f.closed)
 
-with open("sample.txt", encoding="utf-8") as f:  # Mở file sample.txt để đọc (mặc định là "r")
-    data = f.read()                               # Đọc toàn bộ nội dung file lưu vào biến data
+with open("sample.txt", encoding="utf-8") as f:  # sample.txtを読み込みモード（既定値は"r"）で開く
+    data = f.read()                               # ファイル全体を読み込み、変数dataに保存
 print(data)
 
 s1 = "こんにちは python"
 print(len(s1))
 
-s2 = "py" in s1  # Kiểm tra xem chuỗi "py" có trong s1 không
-print(s2)  # In ra kết quả kiểm tra (True hoặc False)
+s2 = "py" in s1  # 文字列s1に「py」が含まれているか確認
+print(s2)  # 判定結果（TrueまたはFalse）を表示
 
-s3 = "pypy" in s1  # Kiểm tra xem chuỗi "pypy" có trong s1 không
-print(s3)  # In ra kết quả kiểm tra (True hoặc False)
+s3 = "pypy" in s1  # 文字列s1に「pypy」が含まれているか確認
+print(s3)  # 判定結果（TrueまたはFalse）を表示
 
-s4 = "_".join(s1)  # Nối các ký tự trong s1 bằng dấu gạch dưới "_"
-print(s4)  # In ra kết quả nối chuỗi
+s4 = "_".join(s1)  # アンダースコア「_」でs1の文字を連結
+print(s4)  # 文字列の連結結果を表示
 
 s5 = "こんにちは"
 s6 = "python"
-s7 = "_".join([s5, s6])  # Nối s5 và s6 bằng dấu gạch dưới "_"
-print(s7)  # In ra kết quả nối chuỗi
+s7 = "_".join([s5, s6])  # アンダースコア「_」でs5とs6を連結
+print(s7)  # 文字列の連結結果を表示
 
 s8 = "ngoc"
 print("{s8}は{s6}が好きです") 
-print(f"{s8}は{s6}が好きです")  # Sử dụng f-string để tạo chuỗi với biến s8 và s6
+print(f"{s8}は{s6}が好きです")  # f文字列を使って変数s8とs6を埋め込む
 print(f"{s8}は{s6}が好きです") 
 print(f"{s8.title()}は{s6.upper()}が好きです") 
 
@@ -34,21 +34,21 @@ import os
 from os import path
 import re
 prog = re.compile("P(y|i)[tT]ho?n") 
-print(prog.search("Python"))  # Tìm kiếm chuỗi "Python" theo mẫu regex
+print(prog.search("Python"))  # 正規表現で文字列「Python」を検索
 print(prog.search("spam_spam_spam")) 
 
 from datetime import datetime
 
 now = datetime.now()
 print(now)
-print(f"{now:%Y年%m月%d日}")  # In ra ngày hiện tại theo định dạng năm-tháng-ngày")
+print(f"{now:%Y年%m月%d日}")  # 現在の日付を年月日の形式で表示
 start = datetime(2020,1,1)
-print(now - start)  # Tính khoảng thời gian từ ngày 1/1/2020 đến hiện tại
+print(now - start)  # 2020年1月1日から現在までの期間を計算
 
 import pickle
 pick = {"today": now, "delta": now - start}
 with open("data.pkl", "wb") as f:
-    pickle.dump(pick, f)  # Lưu dữ liệu pick vào file data.pkl ở chế độ ghi nhị phân ("wb")
+    pickle.dump(pick, f)  # pickのデータをdata.pklにバイナリ書き込みモード（"wb"）で保存
 
 with open("data.pkl", "rb") as f:
     data = pickle.load(f)
@@ -58,18 +58,16 @@ print(pickle.dumps(pick))
 
 from pathlib import Path
 p = Path("sample.txt")
-print(p.resolve())  # In ra đường dẫn tuyệt đối của file sample.txt
+print(p.resolve())  # sample.txtの絶対パスを表示
 
 p1 = Path()
-print(f"Current folder:{p1.resolve()}")  # In ra đường dẫn tuyệt đối của thư mục hiện tại
+print(f"現在のフォルダー: {p1.resolve()}")  # 現在のフォルダーの絶対パスを表示
 
-p2 = Path() / "ham" / "eggs.txt"  # Tạo đường dẫn bằng toán tử /
-print(p2.resolve())  # In ra đường dẫn tuyệt đối của file eggs.txt trong thư mục ham
+p2 = Path() / "ham" / "eggs.txt"  # /演算子でパスを作成
+print(p2.resolve())  # hamフォルダー内のeggs.txtの絶対パスを表示
 p2.parent.mkdir(parents=True, exist_ok=True)
 p2.write_text("Hello World", encoding="utf-8")
 
-print(p2.is_file())  # Kiểm tra xem p2 có phải là file không
-print(p2.is_dir())   # Kiểm tra xem p2 có phải là thư mục không
-
-
+print(p2.is_file())  # p2がファイルかどうかを確認
+print(p2.is_dir())   # p2がフォルダーかどうかを確認
 

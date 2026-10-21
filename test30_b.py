@@ -3,7 +3,7 @@ from selenium.webdriver.chrome.options import Options
 import time
 
 options = Options()
-# Đã xóa dòng headless để bật cửa sổ trình duyệt lên
+# headless設定を削除し、ブラウザーウィンドウを表示する
 
 options.add_argument("--no-sandbox")
 
@@ -11,16 +11,16 @@ driver = webdriver.Chrome(options=options)
 
 try:
     url = "https://www.seshop.com/product/616"
-    print(f"Đang truy cập vào: {url}")
+    print(f"アクセス先: {url}")
     driver.get(url)
     
-    # Cho dừng lại 10-15 giây để trình duyệt kịp load và nếu có trang Security check, 
-    # anh hãy quan sát màn hình xem nó có tự vào được không, hoặc anh có thể tự click xác thực.
-    print("Đang chờ trang web tải và vượt qua kiểm tra bảo mật...")
+    # ブラウザーの読み込みを10～15秒待ちます。セキュリティチェックが表示された場合は、
+    # 自動で通過するか画面を確認するか、手動で認証してください。
+    print("ページの読み込みとセキュリティチェックの完了を待っています...")
     time.sleep(10) 
     
-    print("Tiêu đề trang web hiện tại:", driver.title)
-    print("Độ dài mã nguồn HTML:", len(driver.page_source), "ký tự")
+    print("現在のWebページのタイトル:", driver.title)
+    print("HTMLソースの長さ:", len(driver.page_source), "文字")
     print(driver.page_source)
 
 finally:

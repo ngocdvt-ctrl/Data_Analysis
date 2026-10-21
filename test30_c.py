@@ -4,7 +4,7 @@ import time
 from bs4 import BeautifulSoup
 
 options = Options()
-# Đã xóa dòng headless để bật cửa sổ trình duyệt lên
+# headless設定を削除し、ブラウザーウィンドウを表示する
 
 options.add_argument("--no-sandbox")
 
@@ -12,16 +12,16 @@ driver = webdriver.Chrome(options=options)
 
 try:
     url = "https://www.seshop.com/"
-    print(f"Đang truy cập vào: {url}")
+    print(f"アクセス先: {url}")
     driver.get(url)
-    print("Đang chờ trang web tải và vượt qua kiểm tra bảo mật...")
+    print("ページの読み込みとセキュリティチェックの完了を待っています...")
     time.sleep(10) 
 
     content = driver.page_source
 
     soup = BeautifulSoup(content, "html.parser")
-    print("Kết quả thu được từ BeautifulSoup")
-    print("Tiêu đề trang web hiện tại:", soup.title)
-    print("Thẻ H2 đầu tiên:", soup.h2)
+    print("BeautifulSoupで取得した結果")
+    print("現在のWebページのタイトル:", soup.title)
+    print("最初のH2要素:", soup.h2)
 finally:
     driver.quit()
