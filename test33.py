@@ -18,7 +18,7 @@ try:
     print(f"アクセス先: {url}")
     driver.get(url)
     print("ページの読み込みとセキュリティチェックの完了を待っています...")
-    time.sleep(10) 
+    time.sleep(3) 
 
     content = driver.page_source
 
@@ -93,19 +93,6 @@ try:
 
     print("\n--- 取得結果 ---")
     print(f"取得に成功した書籍数: {len(books)}")
-    print("最初の3冊を表示します:")
-    for i, book in enumerate(books[:3], start=1):
-        print(f"{i}冊目:")
-        print(f"  - タイトル  : {book['title']}")
-        print(f"  - 販売価格  : {book['price']:,} 円")
-        print(f"  - 発売日    : {book['published'].strftime('%Y-%m-%d')}")
-        print(f"  - URL       : {book['book_url']}")
-        print(f"  - 画像URL   : {book['img_url']}")
-
-    df = pd.DataFrame(books)
-    output_file = "seshop_books.xlsx"
-    df.to_excel(output_file)
-    print("本のリストをエクセルに保存しました！")
 
     LABELS = {
         "ISBN": "isbn",
@@ -144,12 +131,26 @@ try:
                     book[LABELS[dt_text]] = int(dd_text)
                 else:
                     book[LABELS[dt_text]] = dd_text
-
+        
         time.sleep(1)
+
     except Exception as e:
         print(f"Đã xảy ra lỗi khi cào chi tiết: {e}")
-        
-    print(book)
+
+    print(f"  - タイトル  : {book['title']}")
+    print(f"  - 販売価格  : {book['price']:,} 円")
+    print(f"  - 発売日    : {book['published'].strftime('%Y-%m-%d')}")
+    print(f"  - URL       : {book['book_url']}")
+    print(f"  - 画像URL   : {book['img_url']}")
+    print(f"  - ISBN      : {book['isbn']}")
+    print(f"  - 判型      : {book['format']}")
+    print(f"  - ページ数   : {book['page']}")
+
+    # Lưu danh sách và thông tin chi tiết trên cùng một sheet
+    output_file = "seshop_books.xlsx"
+    df = pd.DataFrame(books)
+    df.to_excel(output_file)
+    print("Đã lưu danh sách và chi tiết sách vào cùng một sheet trong Excel!")
 
 finally:
     driver.quit()
