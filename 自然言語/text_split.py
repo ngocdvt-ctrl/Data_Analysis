@@ -9,7 +9,7 @@ mecabrc_path = os.path.join(ipadic.DICDIR, "mecabrc").replace("\\", "/")
 
 os.environ["MECABRC"] = mecabrc_path
 
-#chasen出力
+# ChaSen形式で出力
 t = MeCab.Tagger(f"-d {dic_dir} -Ochasen")
 result = t.parse(text)
 print(result)
