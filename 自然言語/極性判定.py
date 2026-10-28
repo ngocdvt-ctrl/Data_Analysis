@@ -76,7 +76,6 @@ for word, label in zip(wago.loc[:, 1], wago.loc[:, 0]):
 
 print(f"3 phần tử đầu tiên của từ điển word2score:\n {list(word2score.items())[:3]}\n")
 
-
 print("--- 4. Tính điểm cực tính cho từng câu văn ---")
 scores = []
 for words in words_list:
@@ -94,7 +93,6 @@ scores_df = pd.DataFrame(
 print("5 dòng đầu tiên của bảng điểm cảm xúc:")
 print(scores_df.head(5))
 print("\n")
-
 
 print("--- 5. Sắp xếp và trích xuất các câu có điểm cao nhất / thấp nhất ---")
 scores_df_sorted = scores_df.sort_values("score", ascending=False)
